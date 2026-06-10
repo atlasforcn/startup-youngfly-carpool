@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YoungFly Carpool Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">112 Young 飛 · 卓越行動獎 · 績優團隊</p>
+          <h1>作伙來共乘 青年共享交通平台</h1>
+        </div>
+        <a class="source-pill" href="https://www.yda.gov.tw/docDetail.aspx?docid=58156&pid=53&uid=94" target="_blank" rel="noreferrer">
+          <span>比賽來源</span>
+          <strong>Young 飛全球行動計畫績優團隊徵選審查結果</strong>
+        </a>
+      </header>
+
+      <section class="metrics" aria-label="共乘摘要">
+        <article class="metric">
+          <span>今日需求</span>
+          <strong id="metric-requests">26</strong>
+          <small>8 筆等待媒合</small>
+        </article>
+        <article class="metric green">
+          <span>已成行</span>
+          <strong id="metric-confirmed">14</strong>
+          <small>平均媒合 9 分鐘</small>
+        </article>
+        <article class="metric">
+          <span>可用座位</span>
+          <strong id="metric-seats">31</strong>
+          <small>5 條熱門路線</small>
+        </article>
+        <article class="metric dark">
+          <span>本週減碳</span>
+          <strong id="metric-carbon">186kg</strong>
+          <small>以共乘取代單人通勤估算</small>
+        </article>
+      </section>
+
+      <section class="workspace">
+        <aside class="panel route-panel" aria-label="路線需求">
+          <div class="panel-head">
+            <p>路線需求</p>
+            <button id="new-request" class="ghost-button" type="button">新增</button>
+          </div>
+          <div class="route-list" id="route-list"></div>
+        </aside>
+
+        <section class="panel match-panel" aria-label="媒合">
+          <div class="panel-head">
+            <p>司機媒合</p>
+            <div class="segmented" aria-label="媒合排序">
+              <button class="segment active" data-mode="fit" type="button">契合</button>
+              <button class="segment" data-mode="time" type="button">最快</button>
+              <button class="segment" data-mode="trust" type="button">信任</button>
+            </div>
+          </div>
+
+          <div class="selected-route" id="selected-route"></div>
+          <div class="driver-grid" id="driver-grid"></div>
+        </section>
+
+        <aside class="panel safety-panel" aria-label="信任與安全">
+          <div class="panel-head">
+            <p>信任安全</p>
+            <span class="live-dot">檢查中</span>
+          </div>
+          <div class="trust-card" id="trust-card"></div>
+          <div class="safety-list" id="safety-list"></div>
+          <div class="source-box">
+            <span>獎項來源</span>
+            <p>112 年 Young 飛全球行動計畫，績優團隊徵選審查結果，Young 飛卓越行動獎，作伙來共乘。</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="lower-grid">
+        <article class="panel split-panel">
+          <div class="panel-head">
+            <p>費用分攤</p>
+            <button id="confirm-button" class="ghost-button" type="button">確認共乘</button>
+          </div>
+          <div class="split-board" id="split-board"></div>
+        </article>
+
+        <article class="panel activity-panel">
+          <div class="panel-head">
+            <p>行動追蹤</p>
+            <button id="feedback-button" class="ghost-button" type="button">新增回饋</button>
+          </div>
+          <div class="activity-feed" id="activity-feed"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
