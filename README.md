@@ -1,5 +1,21 @@
 # YoungFly Carpool Platform
 
+## 快速看懂
+
+![startup-youngfly-carpool 功能截圖](docs/preview.png)
+
+- 線上 Demo：https://atlasforcn.github.io/startup-youngfly-carpool/
+- 這個原型在做什麼：把作伙來共乘做成青年共享交通與共乘媒合平台。
+- 特色定位：特色是把路線、座位、信任資訊與費用分攤放入共乘流程。
+- 操作流程：建立或搜尋共乘路線 → 查看乘客/駕駛資訊、座位與費用 → 完成媒合後追蹤出發、抵達與評價
+
+<details>
+<summary>展開完整功能流程截圖</summary>
+
+![startup-youngfly-carpool 完整功能流程截圖](docs/flow.png)
+
+</details>
+
 這個 repo 是依據 `作伙來共乘` 在 Young 飛全球行動計畫中的績優團隊概念做出的前端原型。原型把「共乘媒合」理解成一個以路線、時段、信任評價與費用分攤為核心的青年共享交通平台。
 
 ## 比賽來源
