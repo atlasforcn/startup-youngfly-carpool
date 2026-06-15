@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- repo-snapshot:start -->
+    <section class="repo-snapshot repo-snapshot--route" aria-label="專案辨識預覽：YoungFly 共乘" style="--snap-bg: #eef6fb; --snap-bg-2: #d9e9f4; --snap-ink: #172633; --snap-muted: #5d6b74; --snap-accent: #2f8fd6; --snap-accent-2: #f0a43a;">
+      <div class="snapshot-copy">
+        <p class="snapshot-kicker">Youth carpool network</p>
+        <div class="snapshot-name">YoungFly 共乘</div>
+        <p class="snapshot-tagline">青年行程、共乘座位與減碳路線，抽樣畫面直接是一張共享交通派車圖。</p>
+        <div class="snapshot-chips" aria-label="核心辨識元素">
+        <span>共乘路線</span>
+        <span>座位媒合</span>
+        <span>減碳紀錄</span>
+        </div>
+      </div>
+      <div class="snapshot-scene" aria-hidden="true">
+        <div class="snapshot-device">
+          <div class="snapshot-device-head">
+            <span>Carpool route</span>
+            <strong>台中到鹿港 3 席</strong>
+          </div>
+          <div class="snapshot-visual snapshot-visual--route">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="snapshot-data-row">
+          <span><b>3</b>空位</span>
+          <span><b>42m</b>車程</span>
+          <span><b>1.8kg</b>減碳</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- repo-snapshot:end -->
+    <div class="demo-boundary" role="note">
+      <strong>Prototype</strong>
+      <span>靜態互動原型；畫面資料、評分、AI、金流、醫療、法律與安全流程皆為示範，不代表原團隊官方產品或實際服務。</span>
+    </div>
     <main class="app-shell">
       <header class="topbar">
         <div>
@@ -72,10 +106,10 @@
           </div>
           <div class="trust-card" id="trust-card"></div>
           <div class="safety-list" id="safety-list"></div>
-          <div class="source-box">
-            <span>獎項來源</span>
+          <details class="source-box">
+            <summary>獎項來源</summary>
             <p>112 年 Young 飛全球行動計畫，績優團隊徵選審查結果，Young 飛卓越行動獎，作伙來共乘。</p>
-          </div>
+          </details>
         </aside>
       </section>
 
